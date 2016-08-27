@@ -1,13 +1,24 @@
 PODS:
   - MOBFoundation_IDFA (2.0.10)
+  - ShareSDK3 (3.4.1):
+    - ShareSDK3/ShareSDK (= 3.4.1)
+  - ShareSDK3/ShareSDK (3.4.1)
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.4.1)
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.4.1)
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.4.1)
   - SMSSDK (2.0.5)
 
 DEPENDENCIES:
   - MOBFoundation_IDFA
+  - ShareSDK3
+  - ShareSDK3/ShareSDKPlatforms/QQ
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo
+  - ShareSDK3/ShareSDKPlatforms/WeChat
   - SMSSDK
 
 SPEC CHECKSUMS:
   MOBFoundation_IDFA: 3e431c5cca9464c3772f50c2decf000e388d5d0b
+  ShareSDK3: e7bcdfeb95338f89efd6fff82b4793d2bfee76f8
   SMSSDK: 85375419fc969dc9398ce9922c5165c1e14ebe23
 
 COCOAPODS: 0.39.0

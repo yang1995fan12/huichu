@@ -1,6 +1,7 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/MOBFoundation_IDFA" "${PODS_ROOT}/SMSSDK/SMS_SDK"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/MOBFoundation_IDFA" "${PODS_ROOT}/SMSSDK/SMS_SDK" "${PODS_ROOT}/ShareSDK3/ShareSDK" "${PODS_ROOT}/ShareSDK3/ShareSDK/Support/Required" "${PODS_ROOT}/ShareSDK3/ShareSDK/Support/Optional" "${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/MOBFoundation_IDFA" "${PODS_ROOT}/Headers/Public/SMSSDK"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/MOBFoundation_IDFA" -isystem "${PODS_ROOT}/Headers/Public/SMSSDK"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"icucore" -l"stdc++" -l"z" -framework "AddressBook" -framework "AddressBookUI" -framework "JavaScriptCore" -framework "MOBFoundation" -framework "MessageUI" -framework "SMS_SDK"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/MOBFoundation_IDFA" "${PODS_ROOT}/Headers/Public/SMSSDK" "${PODS_ROOT}/Headers/Public/ShareSDK3"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/SinaWeiboSDK" $(inherited) "${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/WeChatSDK"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/MOBFoundation_IDFA" -isystem "${PODS_ROOT}/Headers/Public/SMSSDK" -isystem "${PODS_ROOT}/Headers/Public/ShareSDK3"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"WeChatSDK" -l"WeiboSDK" -l"icucore" -l"sqlite3" -l"stdc++" -l"z" -l"z.1.2.5" -framework "AddressBook" -framework "AddressBookUI" -framework "ImageIO" -framework "JavaScriptCore" -framework "MOBFoundation" -framework "MessageUI" -framework "SMS_SDK" -framework "ShareSDK" -framework "ShareSDKConnector" -framework "ShareSDKExtension" -framework "TencentOpenAPI" -framework "UIKit"
 PODS_ROOT = ${SRCROOT}/Pods

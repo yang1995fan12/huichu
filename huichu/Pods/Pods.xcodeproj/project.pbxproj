@@ -10,17 +10,16 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>02907FBFD51F58AB3CC50E8D225D9D3F</key>
+		<key>0096C0C9378A54CDECE53CB3C6754861</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>C4DB3863D00729C9241F19E1376DD99F</string>
-				<string>42F96DDB0AAB4F70929C855DC8EA9306</string>
-			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>Pods</string>
+			<string>ShareSDKConnector.framework</string>
+			<key>path</key>
+			<string>ShareSDK/Support/Required/ShareSDKConnector.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -37,6 +36,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>04C69BF43C120CF864AF66AEFBAC19C0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WXApi.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/WeChatSDK/WXApi.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>10834806BD7B412BC24F347361FA2C8E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -47,6 +61,22 @@
 			<string>text.plist.xml</string>
 			<key>path</key>
 			<string>Pods-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1458B7423F951C5CBBB8F04D2CBF7332</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>702794A30EB04E75CD3A42C24CC205C5</string>
+				<string>E9C5AADF2B4C3411E1EF78C14CB18ED1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SMSSDK</string>
+			<key>path</key>
+			<string>SMSSDK</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -73,6 +103,32 @@
 			<string>BFDCEDF11CC5329E8A2F6885DA7FBE21</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>146CCCAD86AF84BE0BACFE67DED943AC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7448EAFD0335C16183742C789E8F06B6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>15BAE93EA97B40CDAC6FA14DCB2AAC2B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>ShareSDKExtension.framework</string>
+			<key>path</key>
+			<string>ShareSDK/Support/Optional/ShareSDKExtension.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>18A5F5A65969ED0366A2CB34238C8FF5</key>
 		<dict>
@@ -119,6 +175,32 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>2070A14A96E282074A66B83F6654A677</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>path</key>
+			<string>MOBFoundation.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>26E16E5F282F469A0250362001D937A8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WBSDKCommentButton.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBSDKCommentButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>272643F56613CA0D336AE3DBF19DC404</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -129,19 +211,6 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2AE99430DA761FB2026FBC1E48871C48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>71B37898507BF5B84EC497C48893457B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -245,6 +314,34 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>2E91ED04D1D51D8B6E2953DCF7D93778</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WBHttpRequest+WeiboGame.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBHttpRequest+WeiboGame.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>36AB10ADEEC5CC2396E4179C2000D2DF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F26263A83052C17323B5AF2E5402BB09</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>37DB56D75062CC75FCB0966E1C6E8A8E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -255,6 +352,21 @@
 			<string>text</string>
 			<key>path</key>
 			<string>Pods-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3CF5C35B4E964D2AD20E10DF024BDEEA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EB5DC25916A1D386E6EA0AC3F1F5DBC4</string>
+				<string>7D08BC5D48A68F778DC546B59DA0F6F0</string>
+				<string>BD8EE2BA6DDAA1DEC77A0AD6B3BECBFC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ShareSDKPlatforms</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -271,19 +383,16 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>42F96DDB0AAB4F70929C855DC8EA9306</key>
+		<key>4018C0B185C03C32E0F0FD7CE289476E</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>2AE99430DA761FB2026FBC1E48871C48</string>
-				<string>BF2326F9B8B3EDC01B524CFD9F419220</string>
+				<string>88ECEB5FE874D8D5ADD417523274982A</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>SMSSDK</string>
-			<key>path</key>
-			<string>SMSSDK</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -300,7 +409,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5134D75CFB1AC548ADDA8461705D482B</key>
+		<key>55C5EA8894C6EFA85937A1885B4C5CE4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -308,8 +417,40 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>wrapper.plug-in</string>
+			<key>name</key>
+			<string>WeiboSDK.bundle</string>
 			<key>path</key>
-			<string>SMSSDKUI.bundle</string>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.bundle</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5749E2860F9F0406396ED957575A0D35</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WeiboSDK.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>58D83AE071DFA377DB1E09CD92A5350B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WeiboUser.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboUser.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -381,6 +522,21 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>5A37180FC6E9DCB45D29223DF17F2C17</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WBHttpRequest+WeiboToken.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBHttpRequest+WeiboToken.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>5C358AA8BB91700063133597D41C4E0E</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -395,6 +551,20 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>607DE6097371119F5247F8028ECB280B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F9591290E7E5F10E9EA5B7C826CF65F4</string>
+				<string>36AB10ADEEC5CC2396E4179C2000D2DF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ShareSDK</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>60DB2522D6809309FA2F3B04848E7536</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -407,6 +577,36 @@
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>6250FB7129243299F77EA417595B44CB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WBSDKRelationshipButton.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBSDKRelationshipButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62582AB1DB7FC229ED957D37791BE812</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WXApiObject.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/WeChatSDK/WXApiObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>6911BECA35E7518D864239B7E898EEF3</key>
 		<dict>
@@ -421,6 +621,38 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>6A2196C58E593B0A51836FB6F9DD08E5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DEA1F9C5FA13726968C964BF90BC08F4</string>
+				<string>607DE6097371119F5247F8028ECB280B</string>
+				<string>3CF5C35B4E964D2AD20E10DF024BDEEA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ShareSDK3</string>
+			<key>path</key>
+			<string>ShareSDK3</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6B2FA464E625E959036217CB9AEE7FD9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libWeChatSDK.a</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/WeChatSDK/libWeChatSDK.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>6E579FF358AF2261C8682A7FA383EAA6</key>
 		<dict>
 			<key>fileRef</key>
@@ -428,29 +660,57 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>71B37898507BF5B84EC497C48893457B</key>
+		<key>702794A30EB04E75CD3A42C24CC205C5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7D464D60DA18932472AA95DA066A3EA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>73A59B14CCBF2B9F08214D22524A317A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AC37C0064897671855D65996E9E974F5</string>
+				<string>6A2196C58E593B0A51836FB6F9DD08E5</string>
+				<string>1458B7423F951C5CBBB8F04D2CBF7332</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7448EAFD0335C16183742C789E8F06B6</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>SMS_SDK.framework</string>
+			<string>TencentOpenAPI.framework</string>
 			<key>path</key>
-			<string>SMS_SDK/SMS_SDK.framework</string>
+			<string>ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>72FF2E96A01A16BFD0147259D3ACBF39</key>
+		<key>78ABA00B220B4DE26293A78EB73E663C</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>EEFE76EFE0D92B3FF2C9609B940F6408</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>path</key>
+			<string>SMSSDKUI.bundle</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -486,18 +746,114 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>7D08BC5D48A68F778DC546B59DA0F6F0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EFB1F5A79EA585E2ECC7A31C89BB2F70</string>
+				<string>2E91ED04D1D51D8B6E2953DCF7D93778</string>
+				<string>B5903C2BE77605B608DFD72E24833FE5</string>
+				<string>5A37180FC6E9DCB45D29223DF17F2C17</string>
+				<string>A1B56DE0DA49AC8E68793E6C6F10870A</string>
+				<string>B8E553846330652B7AE898BE3D2E9FE2</string>
+				<string>26E16E5F282F469A0250362001D937A8</string>
+				<string>6250FB7129243299F77EA417595B44CB</string>
+				<string>5749E2860F9F0406396ED957575A0D35</string>
+				<string>A6FC2A0DDDF441FA1925AD35DD6312AE</string>
+				<string>58D83AE071DFA377DB1E09CD92A5350B</string>
+				<string>4018C0B185C03C32E0F0FD7CE289476E</string>
+				<string>EF12BBACD635DAC97456F6BB6DEF872B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SinaWeibo</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D464D60DA18932472AA95DA066A3EA0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SMS_SDK.framework</string>
+			<key>path</key>
+			<string>SMS_SDK/SMS_SDK.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>02907FBFD51F58AB3CC50E8D225D9D3F</string>
+				<string>73A59B14CCBF2B9F08214D22524A317A</string>
 				<string>1F0B9F713A13B4F29BE0C0E7483B187B</string>
 				<string>037C0CA694176A3C0915F62C9D20B3E6</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88ECEB5FE874D8D5ADD417523274982A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libWeiboSDK.a</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/libWeiboSDK.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8DBF3CB0B1D8B77CA9F4666F98FFD916</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WechatAuthSDK.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/WeChatSDK/WechatAuthSDK.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8EDFB2ED00B28273B499747614B4A656</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6B2FA464E625E959036217CB9AEE7FD9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9566F181D89FD075F3AD3E14C93653E8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>name</key>
+			<string>TencentOpenApi_IOS_Bundle.bundle</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -514,6 +870,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>A08183FFCADD246C19EB695BD5E38488</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9566F181D89FD075F3AD3E14C93653E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>A1A36D34413696BE466E2CA0AFF194DA</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -524,6 +893,64 @@
 			<string>text.script.sh</string>
 			<key>path</key>
 			<string>Pods-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A1B56DE0DA49AC8E68793E6C6F10870A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WBHttpRequest+WeiboUser.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBHttpRequest+WeiboUser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A42C69E668298858049F7B2AF7C72E93</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>ShareSDK.framework</string>
+			<key>path</key>
+			<string>ShareSDK/ShareSDK.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A6FC2A0DDDF441FA1925AD35DD6312AE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WeiboSDK+Statistics.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK+Statistics.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AC37C0064897671855D65996E9E974F5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC778F36139F90E580672931C2294645</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MOBFoundation_IDFA</string>
+			<key>path</key>
+			<string>MOBFoundation_IDFA</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -545,6 +972,36 @@
 			<string>Pods</string>
 			<key>path</key>
 			<string>Target Support Files/Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B5903C2BE77605B608DFD72E24833FE5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WBHttpRequest+WeiboShare.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBHttpRequest+WeiboShare.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B8E553846330652B7AE898BE3D2E9FE2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WBSDKBasicButton.h</string>
+			<key>path</key>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBSDKBasicButton.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -585,16 +1042,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BF2326F9B8B3EDC01B524CFD9F419220</key>
+		<key>BD8EE2BA6DDAA1DEC77A0AD6B3BECBFC</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>5134D75CFB1AC548ADDA8461705D482B</string>
+				<string>8DBF3CB0B1D8B77CA9F4666F98FFD916</string>
+				<string>04C69BF43C120CF864AF66AEFBAC19C0</string>
+				<string>62582AB1DB7FC229ED957D37791BE812</string>
+				<string>8EDFB2ED00B28273B499747614B4A656</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Resources</string>
+			<string>WeChat</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -626,18 +1086,16 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>C4DB3863D00729C9241F19E1376DD99F</key>
+		<key>CC778F36139F90E580672931C2294645</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>72FF2E96A01A16BFD0147259D3ACBF39</string>
+				<string>2070A14A96E282074A66B83F6654A677</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>MOBFoundation_IDFA</string>
-			<key>path</key>
-			<string>MOBFoundation_IDFA</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -679,14 +1137,100 @@
 				<string>1469924FC52F60B0068FA24EEFCB3EFC</string>
 			</array>
 		</dict>
-		<key>EEFE76EFE0D92B3FF2C9609B940F6408</key>
+		<key>DEA1F9C5FA13726968C964BF90BC08F4</key>
 		<dict>
+			<key>children</key>
+			<array>
+				<string>A42C69E668298858049F7B2AF7C72E93</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E9C5AADF2B4C3411E1EF78C14CB18ED1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>78ABA00B220B4DE26293A78EB73E663C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EB5DC25916A1D386E6EA0AC3F1F5DBC4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>146CCCAD86AF84BE0BACFE67DED943AC</string>
+				<string>A08183FFCADD246C19EB695BD5E38488</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>QQ</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EF12BBACD635DAC97456F6BB6DEF872B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>55C5EA8894C6EFA85937A1885B4C5CE4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EFB1F5A79EA585E2ECC7A31C89BB2F70</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WBHttpRequest.h</string>
 			<key>path</key>
-			<string>MOBFoundation.framework</string>
+			<string>ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBHttpRequest.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F26263A83052C17323B5AF2E5402BB09</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>name</key>
+			<string>ShareSDK.bundle</string>
+			<key>path</key>
+			<string>ShareSDK/Support/Required/ShareSDK.bundle</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F9591290E7E5F10E9EA5B7C826CF65F4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0096C0C9378A54CDECE53CB3C6754861</string>
+				<string>15BAE93EA97B40CDAC6FA14DCB2AAC2B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
