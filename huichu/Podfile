@@ -5,3 +5,17 @@ pod 'ShareSDK3'
 pod 'ShareSDK3/ShareSDKPlatforms/QQ'
 pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
 pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+target 'huichu' do
+pod 'AFNetworking', '~> 3.0'
+end
+
+platform :ios, '7.0'
+pod 'SDWebImage', '~>3.8'
+
+pod 'MJRefresh'
+
+pod 'SVProgressHUD'
