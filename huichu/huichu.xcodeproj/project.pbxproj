@@ -173,6 +173,21 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>B866DBB91D7C5D1A000E8D32</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B8ECE3211D7D126D007144B6</string>
+				<string>B8ECE3221D7D4A3F007144B6</string>
+				<string>B8ECE3231D7D4A3F007144B6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Utilities</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>B874D7D81D6EC84F0072B9F3</key>
 		<dict>
 			<key>children</key>
@@ -274,9 +289,14 @@ fi
 			<array>
 				<string>B874D7F21D6EC8500072B9F3</string>
 				<string>B874D8281D6EF3A70072B9F3</string>
+				<string>B87DC7881D786AD500BEF8C3</string>
 				<string>B874D7E91D6EC8500072B9F3</string>
 				<string>B874D8251D6ED2C70072B9F3</string>
+				<string>B87DC7851D78697C00BEF8C3</string>
+				<string>B8ECE3241D7D4A3F007144B6</string>
 				<string>B874D82B1D6EFE670072B9F3</string>
+				<string>B87DC78B1D786B8F00BEF8C3</string>
+				<string>B87DC78E1D786BC300BEF8C3</string>
 				<string>B874D7E61D6EC8500072B9F3</string>
 			</array>
 			<key>isa</key>
@@ -373,6 +393,7 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
+				<string>B866DBB91D7C5D1A000E8D32</string>
 				<string>B874D81C1D6ECBB70072B9F3</string>
 				<string>B874D81B1D6ECBA60072B9F3</string>
 				<string>B874D81A1D6ECB960072B9F3</string>
@@ -916,6 +937,10 @@ fi
 				<string>YES</string>
 				<key>GCC_OPTIMIZATION_LEVEL</key>
 				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>NO</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string></string>
 				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
 				<array>
 					<string>DEBUG=1</string>
@@ -995,6 +1020,10 @@ fi
 				<string>gnu99</string>
 				<key>GCC_NO_COMMON_BLOCKS</key>
 				<string>YES</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>NO</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string></string>
 				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
 				<string>YES</string>
 				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
@@ -1030,6 +1059,8 @@ fi
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
@@ -1041,6 +1072,10 @@ fi
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
 				<string>AppIcon</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>NO</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string></string>
 				<key>INFOPLIST_FILE</key>
 				<string>huichu/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
@@ -1063,6 +1098,10 @@ fi
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
 				<string>AppIcon</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>NO</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string></string>
 				<key>INFOPLIST_FILE</key>
 				<string>huichu/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
@@ -1086,6 +1125,8 @@ fi
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
@@ -1142,6 +1183,8 @@ fi
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
@@ -1188,12 +1231,7 @@ fi
 		<key>B874D81A1D6ECB960072B9F3</key>
 		<dict>
 			<key>children</key>
-			<array>
-				<string>B874D8261D6EF3A70072B9F3</string>
-				<string>B874D8271D6EF3A70072B9F3</string>
-				<string>B874D8291D6EFE670072B9F3</string>
-				<string>B874D82A1D6EFE670072B9F3</string>
-			</array>
+			<array/>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
@@ -1215,7 +1253,10 @@ fi
 		<key>B874D81C1D6ECBB70072B9F3</key>
 		<dict>
 			<key>children</key>
-			<array/>
+			<array>
+				<string>B87DC7821D78692D00BEF8C3</string>
+				<string>B87DC7811D78686C00BEF8C3</string>
+			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
@@ -1319,6 +1360,220 @@ fi
 		<dict>
 			<key>fileRef</key>
 			<string>B874D82A1D6EFE670072B9F3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B87DC7811D78686C00BEF8C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B874D8261D6EF3A70072B9F3</string>
+				<string>B874D8271D6EF3A70072B9F3</string>
+				<string>B874D8291D6EFE670072B9F3</string>
+				<string>B874D82A1D6EFE670072B9F3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Home</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B87DC7821D78692D00BEF8C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B87DC7831D78697C00BEF8C3</string>
+				<string>B87DC7841D78697C00BEF8C3</string>
+				<string>B87DC7861D786AD500BEF8C3</string>
+				<string>B87DC7871D786AD500BEF8C3</string>
+				<string>B87DC7891D786B8F00BEF8C3</string>
+				<string>B87DC78A1D786B8F00BEF8C3</string>
+				<string>B87DC78C1D786BC300BEF8C3</string>
+				<string>B87DC78D1D786BC300BEF8C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Login</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B87DC7831D78697C00BEF8C3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LoginViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B87DC7841D78697C00BEF8C3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LoginViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B87DC7851D78697C00BEF8C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B87DC7841D78697C00BEF8C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B87DC7861D786AD500BEF8C3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RegisteredViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B87DC7871D786AD500BEF8C3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RegisteredViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B87DC7881D786AD500BEF8C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B87DC7871D786AD500BEF8C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B87DC7891D786B8F00BEF8C3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ResettingPWViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B87DC78A1D786B8F00BEF8C3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ResettingPWViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B87DC78B1D786B8F00BEF8C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B87DC78A1D786B8F00BEF8C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B87DC78C1D786BC300BEF8C3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NewPasswordViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B87DC78D1D786BC300BEF8C3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NewPasswordViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B87DC78E1D786BC300BEF8C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B87DC78D1D786BC300BEF8C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B8ECE3211D7D126D007144B6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Helper.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B8ECE3221D7D4A3F007144B6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Utilities.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B8ECE3231D7D4A3F007144B6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Utilities.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B8ECE3241D7D4A3F007144B6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B8ECE3231D7D4A3F007144B6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
