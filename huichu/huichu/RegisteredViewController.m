@@ -12,8 +12,7 @@
 #import <SMS_SDK/SMSSDK.h>
 //SVP
 #import <SVProgressHUD/SVProgressHUD.h>
-//AFN
-#import <AFNetworking/AFNetworking.h>
+
 
 
 @interface RegisteredViewController ()<UITextFieldDelegate>

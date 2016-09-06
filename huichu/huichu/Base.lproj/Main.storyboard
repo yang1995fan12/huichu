@@ -102,7 +102,7 @@
                                     <constraint firstItem="zlr-PU-Vto" firstAttribute="centerY" secondItem="VmT-dH-I1Q" secondAttribute="centerY" id="mIp-CX-7qa"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqI-S8-thD">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqI-S8-thD">
                                 <rect key="frame" x="20" y="84" width="44" height="44"/>
                                 <state key="normal" image="hui_cha"/>
                                 <connections>
@@ -239,7 +239,7 @@
                                             <constraint firstAttribute="height" constant="59" id="xlu-9f-1aU"/>
                                         </constraints>
                                         <color key="textColor" red="0.86083277250000001" green="0.85673468320000001" blue="0.86889022439999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umg-7a-Yoq">
@@ -247,9 +247,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="0Z1-cl-3iF"/>
+                                            <constraint firstAttribute="height" constant="59" id="V49-HV-rb8"/>
                                             <constraint firstAttribute="width" constant="120" id="igl-Aq-yn2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="获取验证码"/>
                                         <connections>
                                             <action selector="obtainAction:forEvent:" destination="EPj-Jc-cnC" eventType="touchUpInside" id="X68-z7-Uwd"/>
@@ -261,7 +262,7 @@
                                             <constraint firstAttribute="height" constant="59" id="2nb-Vv-Yrb"/>
                                         </constraints>
                                         <color key="textColor" red="0.86083277250000001" green="0.85673468320000001" blue="0.86889022439999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入短信验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z2C-3V-xJ4">
@@ -270,7 +271,7 @@
                                             <constraint firstAttribute="height" constant="59" id="6tX-Rd-yS1"/>
                                         </constraints>
                                         <color key="textColor" red="0.86083277250000001" green="0.85673468320000001" blue="0.86889022439999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -314,11 +315,10 @@
                         <color key="backgroundColor" red="0.92962503969999999" green="0.92720930369999999" blue="0.95683092950000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OC4-Bb-QnI" firstAttribute="top" secondItem="bbK-RD-YVQ" secondAttribute="bottom" constant="50" id="5dJ-jJ-g43"/>
+                            <constraint firstItem="bbK-RD-YVQ" firstAttribute="top" secondItem="kcj-un-bYx" secondAttribute="bottom" id="G6t-vR-Pby"/>
                             <constraint firstAttribute="trailing" secondItem="bbK-RD-YVQ" secondAttribute="trailing" id="LLe-oy-P7Z"/>
                             <constraint firstItem="OC4-Bb-QnI" firstAttribute="leading" secondItem="QbS-Ke-z42" secondAttribute="leading" constant="20" id="YBm-IF-okJ"/>
                             <constraint firstAttribute="trailing" secondItem="OC4-Bb-QnI" secondAttribute="trailing" constant="20" id="hol-OO-hJj"/>
-                            <constraint firstItem="bbK-RD-YVQ" firstAttribute="top" secondItem="kcj-un-bYx" secondAttribute="bottom" id="lym-vz-Gqh"/>
-                            <constraint firstItem="rCQ-df-EIb" firstAttribute="top" secondItem="umg-7a-Yoq" secondAttribute="bottom" constant="416" id="tGd-S0-Y5j"/>
                             <constraint firstItem="bbK-RD-YVQ" firstAttribute="leading" secondItem="QbS-Ke-z42" secondAttribute="leading" id="ufA-0p-WAc"/>
                         </constraints>
                     </view>
