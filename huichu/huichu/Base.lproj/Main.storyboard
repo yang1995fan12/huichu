@@ -55,7 +55,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.86083277250000001" green="0.85673468320000001" blue="0.86889022439999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tJW-2L-yNf">
                                         <rect key="frame" x="40" y="61" width="430" height="59"/>
@@ -240,7 +240,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.86083277250000001" green="0.85673468320000001" blue="0.86889022439999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umg-7a-Yoq">
                                         <rect key="frame" x="460" y="61" width="120" height="59"/>
@@ -272,7 +272,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.86083277250000001" green="0.85673468320000001" blue="0.86889022439999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -563,6 +563,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MWn-76-gSJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.86083277250000001" green="0.85673468320000001" blue="0.86889022439999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.68462135840000005" green="0.88056284309999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

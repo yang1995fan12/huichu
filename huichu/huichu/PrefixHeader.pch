@@ -14,5 +14,25 @@
 
 //AFN
 #import <AFNetworking/AFNetworking.h>
+//第三方短信头文件
+#import <SMS_SDK/SMSSDK.h>
+//SVP
+#import <SVProgressHUD/SVProgressHUD.h>
 
+//ShareSDk（社会化分享）头文件
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+//腾讯开放平台SDK头文件
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+//微信SDK头文件
+#import "WXApi.h"
+//新浪微博SDK头文件
+#import "WeiboSDK.h"
+// 导入头文件
+#import <ShareSDKExtension/SSEThirdPartyLoginHelper.h>
+//自己写的工具类
+#import "Utilities.h"
+//宏定义
+#import "Helper.h"
 #endif /* PrefixHeader_pch */

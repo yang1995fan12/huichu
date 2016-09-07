@@ -8,12 +8,7 @@
 
 #import "RegisteredViewController.h"
 #import "HomeTableViewController.h"
-//第三方短信头文件
-#import <SMS_SDK/SMSSDK.h>
-//SVP
-#import <SVProgressHUD/SVProgressHUD.h>
-
-
+#import "ViewController.h"
 
 @interface RegisteredViewController ()<UITextFieldDelegate>
 {
@@ -49,7 +44,8 @@
 #pragma mark -------
 - (IBAction)obtainAction:(UIButton *)sender forEvent:(UIEvent *)event {
     if (_Tel.text.length != 11) {
-        [self judgeTel:@"请输入11位的手机号"];
+        //提示框
+        [Utilities judgeTel:@"请输入11位的手机号" view:self.view];
         return;
     }
     //获取验证码(测试)
@@ -103,62 +99,59 @@
 }
 
 
-//提示错误小窗口
-- (void)judgeTel:(NSString *)Text {
-    
-        // 声明一个 UILabel 对象
-        UILabel * tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width/3, self.view.frame.size.height/3, 150, 70)];
-        // 设置提示内容
-        [tipLabel setText:Text];
-        tipLabel.backgroundColor = [UIColor whiteColor];
-        tipLabel.layer.cornerRadius = 5;
-        tipLabel.layer.masksToBounds = YES;
-        tipLabel.numberOfLines = 0;
-        tipLabel.textAlignment = NSTextAlignmentCenter;
-        tipLabel.textColor = [UIColor blackColor];
-        [self.view addSubview:tipLabel];
-        // 设置时间和动画效果
-        [UIView animateWithDuration:2.0 animations:^{
-            tipLabel.alpha = 0.0;
-        } completion:^(BOOL finished) {
-            // 动画完毕从父视图移除
-            [tipLabel removeFromSuperview];
-        }];
-
-}
-
 - (IBAction)finishAction:(UIButton *)sender forEvent:(UIEvent *)event {
-    
-    
     
     [self SubmitVerificationCode:^(Boolean complete) {
         if (complete != true) {
-            [self judgeTel:@"验证码错误"];
+            //提示框
+            [Utilities judgeTel:@"验证码错误" view:self.view];
             return;
         } else {
-            //请求参数
-            NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:_Tel.text,_password.text, nil];
+            
+            //跳转首页
+            UIStoryboard *identity = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+            ViewController *viewVC = [identity instantiateViewControllerWithIdentifier:@"ViewVC"];
+            [self presentViewController:viewVC animated:YES completion:nil];
+            
+            //请求参数（接口有问题，暂时用不了）
+            NSDictionary *dic = @{@"username":_Tel.text,
+                                  @"password":_password.text};
             //初始化Manager
             AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
             manager.requestSerializer = [AFJSONRequestSerializer serializer];
             
             //post请求
-            [manager POST:@"http://localhost:8080/api/register" parameters:dic progress:^(NSProgress * _Nonnull uploadProgress) {
+            [manager POST:logonURL parameters:dic progress:^(NSProgress * _Nonnull uploadProgress) {
                 
             } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 //请求成功，解析数据
                 NSLog(@"%@",responseObject);
+                
                 NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:nil];
                 NSLog(@"%@",dic);
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 NSLog(@"%@",[error localizedDescription]);
+
+                //提示框
+                [Utilities judgeTel:@"注册失败" view:self.view];
             }];
         }
     }];
-    
-    UIStoryboard *identity = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    HomeTableViewController *HomeVC = [identity instantiateViewControllerWithIdentifier:@"HomeVC"];
-    [self presentViewController:HomeVC animated:YES completion:nil];
+}
 
+#pragma mark - TextField
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
+//当文本输入框中输入的内容变化是调用该方法，返回值为NO不允许调用
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    return YES;
 }
 @end

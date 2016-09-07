@@ -25,4 +25,9 @@
 #define QQAppID @"1105638836"
 #define QQAppKey @"YiqRDgXsxIWZeDXz"
 
+//接口
+#define logonURL @"http:// localhost:8080/api/register"//注册
+#define LoginURL @"http:// localhost:8080/api/login"//登录
+#define LogoutURL @"http:// localhost:8080/api/logout"//登出
+
 #endif /* Helper_h */

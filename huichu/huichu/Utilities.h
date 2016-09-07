@@ -10,4 +10,6 @@
 
 @interface Utilities : NSObject
 
+//提示错误小窗口
++ (void)judgeTel:(NSString *)Text view:(UIView *)view;
 @end
