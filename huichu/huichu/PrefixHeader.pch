@@ -18,6 +18,8 @@
 #import <SMS_SDK/SMSSDK.h>
 //SVP
 #import <SVProgressHUD/SVProgressHUD.h>
+//侧滑
+#import <ECSlidingViewController/ECSlidingViewController.h>
 
 //ShareSDk（社会化分享）头文件
 #import <ShareSDK/ShareSDK.h>

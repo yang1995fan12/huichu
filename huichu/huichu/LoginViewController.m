@@ -10,9 +10,10 @@
 #import "HomeTableViewController.h"
 #import "RegisteredViewController.h"
 #import "ViewController.h"
+#import "TabBarViewController.h"
 
 @interface LoginViewController ()<UITextFieldDelegate>
-
+@property (strong,nonatomic) ECSlidingViewController * slidingVC;
 @end
 
 @implementation LoginViewController
@@ -26,8 +27,10 @@
     //默认获取 textfield 焦点
     [_Tel becomeFirstResponder];
     
+    [self cehua];
     
 }
+
 //视图已经出现时调用
 - (void)viewWillAppear:(BOOL)animated {
     self.navigationController.navigationBar.hidden = YES;
@@ -39,6 +42,57 @@
 }
 
 
+#pragma mark 设置侧滑
+- (void)cehua {
+    UIStoryboard* sd = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    ViewController *viewVC = [sd instantiateViewControllerWithIdentifier:@"viewVC"];
+    TabBarViewController *tabView = [sd instantiateViewControllerWithIdentifier:@"tabView"];
+    // LoginViewController *LoginVC = [sd instantiateViewControllerWithIdentifier:@"LoginVC"];
+    
+    //---------------------侧滑开始-TabBar-Home--------------------
+    //初始化侧滑框架，并且设置中间显示的页面
+    _slidingVC = [ECSlidingViewController slidingWithTopViewController:tabView];
+    //设置侧滑的耗时
+    _slidingVC.defaultTransitionDuration = 0.25f;
+    //设置控制侧滑的手势（这里同时对触摸和拖拽相应）
+    _slidingVC.topViewAnchoredGesture = ECSlidingViewControllerAnchoredGesturePanning | ECSlidingViewControllerAnchoredGestureTapping;
+    //设置上述手势的识别范围
+    [tabView.view addGestureRecognizer:_slidingVC.panGesture];
+    //------------------侧滑开始--侧滑页----------------------
+    _slidingVC.underLeftViewController = viewVC;
+    _slidingVC.anchorRightPeekAmount = [[UIScreen mainScreen] bounds].size.width / 4;
+    
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(menuSwitchAction) name:@"MenuSwitch" object:nil];
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(EnableGestureAction) name:@"EnableGesture" object:nil];
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(DisableGestureAction) name:@"DisableGesture" object:nil];
+    
+}
+
+- (void)menuSwitchAction {
+    NSLog(@"menu1");
+    //如果中间那扇门在在右侧，说明  已经被侧滑  因此需要关闭
+    if (_slidingVC.currentTopViewPosition == ECSlidingViewControllerTopViewPositionAnchoredRight) {
+        //中间  页面向左滑
+        [_slidingVC resetTopViewAnimated:YES];
+    }else {
+        //中间  页面向右滑
+        [_slidingVC anchorTopViewToRightAnimated:YES];
+    }
+}
+//激活 侧滑手势
+- (void)EnableGestureAction{
+    _slidingVC.panGesture.enabled = YES;
+}
+//关闭 侧滑手势
+- (void)DisableGestureAction{
+    _slidingVC.panGesture.enabled = NO;
+}
+
+#pragma mark 各种点击事件
+
 //忘记密码
 - (IBAction)forgetPwAction:(UIButton *)sender forEvent:(UIEvent *)event {
     
@@ -46,7 +100,7 @@
 //登录
 - (IBAction)loginAction:(UIButton *)sender forEvent:(UIEvent *)event {
     
-    if (_Tel.text.length == 11 && [_password.text isEqual: @"yangfan"]) {
+    if ([_Tel.text isEqual:@"18170763211"] && [_password.text isEqual: @"yangfan"]) {
         UIStoryboard *identity = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
         HomeTableViewController *HomeVC = [identity instantiateViewControllerWithIdentifier:@"HomeVC"];
         [self presentViewController:HomeVC animated:YES completion:nil];
@@ -72,9 +126,11 @@
 //直接进入
 - (IBAction)skipAction:(UIButton *)sender forEvent:(UIEvent *)event {
     
-    UIStoryboard *identity = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    ViewController *viewVC = [identity instantiateViewControllerWithIdentifier:@"ViewVC"];
-    [self presentViewController:viewVC animated:YES completion:nil];
+//    UIStoryboard *identity = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//    ViewController *viewVC = [identity instantiateViewControllerWithIdentifier:@"viewVC"];
+//    
+
+    [self presentViewController:_slidingVC animated:YES completion:nil];
     
 }
 //注册
@@ -101,9 +157,7 @@
              NSLog(@"用户令牌token=%@",user.credential.token);//用户令牌
              NSLog(@"昵称nickname=%@",user.nickname);//昵称
              //跳转主页面
-             UIStoryboard *identity = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-             ViewController *viewVC = [identity instantiateViewControllerWithIdentifier:@"ViewVC"];
-             [self presentViewController:viewVC animated:YES completion:nil];
+             [self presentViewController:_slidingVC animated:YES completion:nil];
          }
          
          else
@@ -129,9 +183,7 @@
                                        //授权凭证， 为nil则表示尚未授权
                                        NSLog(@"dd%@",user.credential);
                                        //跳转主页面
-                                       UIStoryboard *identity = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-                                       ViewController *viewVC = [identity instantiateViewControllerWithIdentifier:@"ViewVC"];
-                                       [self presentViewController:viewVC animated:YES completion:nil];
+                                       [self presentViewController:_slidingVC animated:YES completion:nil];
                                        
                                    }
                                 onLoginResult:^(SSDKResponseState state, SSEBaseUser *user, NSError *error) {
@@ -145,12 +197,13 @@
 }
 //微信登录
 - (IBAction)weixinAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    
 }
 //支付宝登录
 - (IBAction)zhifubaoAction:(UIButton *)sender forEvent:(UIEvent *)event {
 }
 
-#pragma mark - TextField
+#pragma mark - 键盘收起
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];

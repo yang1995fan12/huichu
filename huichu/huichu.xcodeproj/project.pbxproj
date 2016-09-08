@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		153B7CEC108BA35A5A847B26 /* libPods-huichu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF53AD0BE43E536CC5BB5C /* libPods-huichu.a */; };
 		38333D7645726ADE42A47908 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE86714FF6C5F947BB7030A /* libPods.a */; };
+		B86DB0311D8193D600690819 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DB0301D8193D600690819 /* TabBarViewController.m */; };
 		B874D7E61D6EC8500072B9F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B874D7E51D6EC8500072B9F3 /* main.m */; };
 		B874D7E91D6EC8500072B9F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B874D7E81D6EC8500072B9F3 /* AppDelegate.m */; };
 		B874D7EF1D6EC8500072B9F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B874D7ED1D6EC8500072B9F3 /* Main.storyboard */; };
@@ -49,6 +50,8 @@
 		2AE86714FF6C5F947BB7030A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E6F2D003CCA0F65682B032 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8951E9F0CAAFE1901DAFD075 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B86DB02F1D8193D600690819 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarViewController.h; path = ../TabBarViewController.h; sourceTree = "<group>"; };
+		B86DB0301D8193D600690819 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarViewController.m; path = ../TabBarViewController.m; sourceTree = "<group>"; };
 		B874D7E11D6EC8500072B9F3 /* huichu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huichu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B874D7E51D6EC8500072B9F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B874D7E71D6EC8500072B9F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				B874D81A1D6ECB960072B9F3 /* View */,
 				B874D7E71D6EC8500072B9F3 /* AppDelegate.h */,
 				B874D7E81D6EC8500072B9F3 /* AppDelegate.m */,
+				B86DB02F1D8193D600690819 /* TabBarViewController.h */,
+				B86DB0301D8193D600690819 /* TabBarViewController.m */,
 				B874D8231D6ED2C70072B9F3 /* ViewController.h */,
 				B874D8241D6ED2C70072B9F3 /* ViewController.m */,
 				B874D7ED1D6EC8500072B9F3 /* Main.storyboard */,
@@ -447,6 +452,7 @@
 				B874D8281D6EF3A70072B9F3 /* LeftTableViewController.m in Sources */,
 				B87DC7881D786AD500BEF8C3 /* RegisteredViewController.m in Sources */,
 				B874D7E91D6EC8500072B9F3 /* AppDelegate.m in Sources */,
+				B86DB0311D8193D600690819 /* TabBarViewController.m in Sources */,
 				B874D8251D6ED2C70072B9F3 /* ViewController.m in Sources */,
 				B87DC7851D78697C00BEF8C3 /* LoginViewController.m in Sources */,
 				B8ECE3241D7D4A3F007144B6 /* Utilities.m in Sources */,

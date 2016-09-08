@@ -7,19 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <SMS_SDK/SMSSDK.h>
-#import "Helper.h"
-
-//ShareSDk（社会化分享）头文件
-#import <ShareSDK/ShareSDK.h>
-#import <ShareSDKConnector/ShareSDKConnector.h>
-//腾讯开放平台SDK头文件
-#import <TencentOpenAPI/TencentOAuth.h>
-#import <TencentOpenAPI/QQApiInterface.h>
-//微信SDK头文件
-#import "WXApi.h"
-//新浪微博SDK头文件
-#import "WeiboSDK.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -30,6 +18,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [self share];
+
+    //初始化App窗口，将窗口设置为全屏
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //将上述窗口设置为该App唯一的主窗口，并且直接显示出来
+    [self.window makeKeyAndVisible];
+    
+    
+    UIStoryboard* sd = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    LoginViewController *LoginVC = [sd instantiateViewControllerWithIdentifier:@"LoginVC"];
+
+    //设置根视图（也就是第一个视图）
+    self.window.rootViewController = LoginVC;
+    return YES;
+}
+
+- (void)share {
     //初始化应用  短信sdk
     [SMSSDK registerApp:SMSAppKey withSecret:SMSAppSecret];
     
@@ -90,10 +95,6 @@
                  break;
          }
      }];
-
-    
-    
-    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

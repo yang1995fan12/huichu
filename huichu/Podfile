@@ -19,3 +19,6 @@ pod 'SDWebImage', '~>3.8'
 pod 'MJRefresh'
 
 pod 'SVProgressHUD'
+
+platform :ios, '7.0'
+pod 'ECSlidingViewController', '~> 2.0.3'
