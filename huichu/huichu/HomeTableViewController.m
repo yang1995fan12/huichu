@@ -17,11 +17,70 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenColor];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [self data];
+}
+
+//请求数据
+- (void)data {
+    NSDictionary *dic = @{@"key":huichuAppKey};
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    [manager GET:@"http://apicloud.mob.com/v1/cook/category/query" parameters:dic progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:nil];
+        //NSLog(@"----%@", dic);
+        
+        if ([dic[@"retCode"] integerValue] == 200) {
+            NSLog(@"成功");
+            
+            NSDictionary *result = dic[@"result"];
+            
+            NSDictionary *categoryInfo = result[@"categoryInfo"];
+            NSLog(@"cotegoryInfo---%@",categoryInfo);
+            
+            NSArray *childs = result[@"childs"];
+            //NSLog(@"childs---%@",childs);
+            
+            for (int a = 0;a<childs.count;a++) {
+                
+                for (int i = 0;i<childs.count;i++) {
+                NSDictionary *categoryInfo = childs[i][@"categoryInfo"];
+                NSLog(@"categoryInfo%@",categoryInfo);
+                NSArray *childsArr = childs[i][@"childs"];
+                NSLog(@"childsArr%@",childsArr);
+                
+                    for (int f = 0;f<childsArr.count;f++) {
+                    NSDictionary *categoryInfoDic = childsArr[f][@"categoryInfo"];
+                    NSLog(@"categoryInfoDic%@",categoryInfoDic);
+                }
+            }
+            
+        }
+    }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@", [error localizedDescription]);
+        switch (error.code) {
+            case 10001: {
+                NSLog(@"appKey不合法");
+            }
+                break;
+            case 10020: {
+                NSLog(@"接口维护");
+            }
+                break;
+            case 10021: {
+                NSLog(@"接口停用");
+            }
+                break;
+            default: {
+                NSLog(@"未知错误");
+            }
+                break;
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,12 +91,12 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
+
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+
     return 0;
 }
 
@@ -48,50 +107,6 @@
     // Configure the cell...
     
     return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
 */
 

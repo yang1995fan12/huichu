@@ -30,4 +30,8 @@
 #define LoginURL @"http:// localhost:8080/api/login"//登录
 #define LogoutURL @"http:// localhost:8080/api/logout"//登出
 
+//各种接口数据
+#define huichuAppKey @"1678f566d17f0"
+#define huichuAppSecret @"c5b590904cc5f26345106aa4528a8f0b"
+
 #endif /* Helper_h */

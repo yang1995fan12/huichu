@@ -118,7 +118,7 @@
                                   @"password":_password.text};
             //初始化Manager
             AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-            manager.requestSerializer = [AFJSONRequestSerializer serializer];
+            manager.responseSerializer = [AFHTTPResponseSerializer serializer];
             
             //post请求
             [manager POST:logonURL parameters:dic progress:^(NSProgress * _Nonnull uploadProgress) {
