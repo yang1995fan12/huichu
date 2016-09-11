@@ -7,7 +7,7 @@
 //
 
 #import "RegisteredViewController.h"
-#import "HomeTableViewController.h"
+#import "HomeViewController.h"
 #import "ViewController.h"
 
 @interface RegisteredViewController ()<UITextFieldDelegate>

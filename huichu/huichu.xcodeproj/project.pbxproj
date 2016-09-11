@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		153B7CEC108BA35A5A847B26 /* libPods-huichu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EF53AD0BE43E536CC5BB5C /* libPods-huichu.a */; };
 		38333D7645726ADE42A47908 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE86714FF6C5F947BB7030A /* libPods.a */; };
+		B8690BEE1D8301E700C43936 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8690BED1D8301E700C43936 /* HomeViewController.m */; };
+		B8690BF21D830C8300C43936 /* ico_make.png in Resources */ = {isa = PBXBuildFile; fileRef = B8690BEF1D830C8300C43936 /* ico_make.png */; };
+		B8690BF31D830C8300C43936 /* JSDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B8690BF11D830C8300C43936 /* JSDropDownMenu.m */; };
 		B86DB0311D8193D600690819 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DB0301D8193D600690819 /* TabBarViewController.m */; };
 		B874D7E61D6EC8500072B9F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B874D7E51D6EC8500072B9F3 /* main.m */; };
 		B874D7E91D6EC8500072B9F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B874D7E81D6EC8500072B9F3 /* AppDelegate.m */; };
@@ -20,7 +23,7 @@
 		B874D80D1D6EC8500072B9F3 /* huichuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B874D80C1D6EC8500072B9F3 /* huichuUITests.m */; };
 		B874D8251D6ED2C70072B9F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B874D8241D6ED2C70072B9F3 /* ViewController.m */; };
 		B874D8281D6EF3A70072B9F3 /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B874D8271D6EF3A70072B9F3 /* LeftTableViewController.m */; };
-		B874D82B1D6EFE670072B9F3 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B874D82A1D6EFE670072B9F3 /* HomeTableViewController.m */; };
+		B87B2AF41D83DF8F008DD3FA /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B87B2AF31D83DF8F008DD3FA /* HomeTableViewCell.m */; };
 		B87DC7851D78697C00BEF8C3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87DC7841D78697C00BEF8C3 /* LoginViewController.m */; };
 		B87DC7881D786AD500BEF8C3 /* RegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87DC7871D786AD500BEF8C3 /* RegisteredViewController.m */; };
 		B87DC78B1D786B8F00BEF8C3 /* ResettingPWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87DC78A1D786B8F00BEF8C3 /* ResettingPWViewController.m */; };
@@ -50,6 +53,11 @@
 		2AE86714FF6C5F947BB7030A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E6F2D003CCA0F65682B032 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8951E9F0CAAFE1901DAFD075 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B8690BEC1D8301E700C43936 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B8690BED1D8301E700C43936 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B8690BEF1D830C8300C43936 /* ico_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_make.png; sourceTree = "<group>"; };
+		B8690BF01D830C8300C43936 /* JSDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDropDownMenu.h; sourceTree = "<group>"; };
+		B8690BF11D830C8300C43936 /* JSDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDropDownMenu.m; sourceTree = "<group>"; };
 		B86DB02F1D8193D600690819 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarViewController.h; path = ../TabBarViewController.h; sourceTree = "<group>"; };
 		B86DB0301D8193D600690819 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarViewController.m; path = ../TabBarViewController.m; sourceTree = "<group>"; };
 		B874D7E11D6EC8500072B9F3 /* huichu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huichu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,8 +79,8 @@
 		B874D8241D6ED2C70072B9F3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B874D8261D6EF3A70072B9F3 /* LeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewController.h; sourceTree = "<group>"; };
 		B874D8271D6EF3A70072B9F3 /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
-		B874D8291D6EFE670072B9F3 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
-		B874D82A1D6EFE670072B9F3 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		B87B2AF21D83DF8F008DD3FA /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		B87B2AF31D83DF8F008DD3FA /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		B87DC7831D78697C00BEF8C3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B87DC7841D78697C00BEF8C3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B87DC7861D786AD500BEF8C3 /* RegisteredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisteredViewController.h; sourceTree = "<group>"; };
@@ -146,6 +154,16 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
+		B8690BE61D82F88B00C43936 /* JSDropDown */ = {
+			isa = PBXGroup;
+			children = (
+				B8690BEF1D830C8300C43936 /* ico_make.png */,
+				B8690BF01D830C8300C43936 /* JSDropDownMenu.h */,
+				B8690BF11D830C8300C43936 /* JSDropDownMenu.m */,
+			);
+			name = JSDropDown;
+			sourceTree = "<group>";
+		};
 		B874D7D81D6EC84F0072B9F3 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +189,7 @@
 		B874D7E31D6EC8500072B9F3 /* huichu */ = {
 			isa = PBXGroup;
 			children = (
+				B8690BE61D82F88B00C43936 /* JSDropDown */,
 				B866DBB91D7C5D1A000E8D32 /* Utilities */,
 				B874D81C1D6ECBB70072B9F3 /* Controller */,
 				B874D81B1D6ECBA60072B9F3 /* Model */,
@@ -221,6 +240,8 @@
 		B874D81A1D6ECB960072B9F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B87B2AF21D83DF8F008DD3FA /* HomeTableViewCell.h */,
+				B87B2AF31D83DF8F008DD3FA /* HomeTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -246,8 +267,8 @@
 			children = (
 				B874D8261D6EF3A70072B9F3 /* LeftTableViewController.h */,
 				B874D8271D6EF3A70072B9F3 /* LeftTableViewController.m */,
-				B874D8291D6EFE670072B9F3 /* HomeTableViewController.h */,
-				B874D82A1D6EFE670072B9F3 /* HomeTableViewController.m */,
+				B8690BEC1D8301E700C43936 /* HomeViewController.h */,
+				B8690BED1D8301E700C43936 /* HomeViewController.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -376,6 +397,7 @@
 				B874D7F71D6EC8500072B9F3 /* LaunchScreen.storyboard in Resources */,
 				B874D7F41D6EC8500072B9F3 /* Assets.xcassets in Resources */,
 				B874D7EF1D6EC8500072B9F3 /* Main.storyboard in Resources */,
+				B8690BF21D830C8300C43936 /* ico_make.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,11 +474,13 @@
 				B874D8281D6EF3A70072B9F3 /* LeftTableViewController.m in Sources */,
 				B87DC7881D786AD500BEF8C3 /* RegisteredViewController.m in Sources */,
 				B874D7E91D6EC8500072B9F3 /* AppDelegate.m in Sources */,
+				B87B2AF41D83DF8F008DD3FA /* HomeTableViewCell.m in Sources */,
+				B8690BEE1D8301E700C43936 /* HomeViewController.m in Sources */,
 				B86DB0311D8193D600690819 /* TabBarViewController.m in Sources */,
 				B874D8251D6ED2C70072B9F3 /* ViewController.m in Sources */,
+				B8690BF31D830C8300C43936 /* JSDropDownMenu.m in Sources */,
 				B87DC7851D78697C00BEF8C3 /* LoginViewController.m in Sources */,
 				B8ECE3241D7D4A3F007144B6 /* Utilities.m in Sources */,
-				B874D82B1D6EFE670072B9F3 /* HomeTableViewController.m in Sources */,
 				B87DC78B1D786B8F00BEF8C3 /* ResettingPWViewController.m in Sources */,
 				B87DC78E1D786BC300BEF8C3 /* NewPasswordViewController.m in Sources */,
 				B874D7E61D6EC8500072B9F3 /* main.m in Sources */,
@@ -606,7 +630,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/yf/Documents/huichu/huichu/huichu/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = huichu/PrefixHeader.pch;
 				INFOPLIST_FILE = huichu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yf.huichu;
@@ -620,7 +644,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/yf/Documents/huichu/huichu/huichu/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = huichu/PrefixHeader.pch;
 				INFOPLIST_FILE = huichu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yf.huichu;

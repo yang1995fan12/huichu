@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "LeftTableViewController.h"
-#import "HomeTableViewController.h"
+#import "HomeViewController.h"
 
 @interface ViewController ()//{
 //    float speed_f;

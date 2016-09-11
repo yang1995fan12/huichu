@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import "HomeTableViewController.h"
+#import "HomeViewController.h"
 #import "RegisteredViewController.h"
 #import "ViewController.h"
 #import "TabBarViewController.h"
@@ -102,7 +102,7 @@
     
     if ([_Tel.text isEqual:@"18170763211"] && [_password.text isEqual: @"yangfan"]) {
         UIStoryboard *identity = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-        HomeTableViewController *HomeVC = [identity instantiateViewControllerWithIdentifier:@"HomeVC"];
+        HomeViewController *HomeVC = [identity instantiateViewControllerWithIdentifier:@"HomeVC"];
         [self presentViewController:HomeVC animated:YES completion:nil];
     } else {
         [Utilities judgeTel:@"请输入正确的账号密码" view:self.view];
